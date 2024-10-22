@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Your Company Name</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/placeholder.svg?height=40&width=40" alt="Logo" class="logo-img">
+                <span>Resume Builder</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="login-btn" class="btn btn-secondary">Login</button>
+                <button id="signup-btn" class="btn btn-primary">Sign Up</button>
+                <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="contact-container animate__animated animate__fadeInUp">
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p>Email: info@yourcompany.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main Street, Anytown, USA</p>
+        </section>
+        <section class="map">
+            <h2>Find Us Here</h2>
+            <!-- Placeholder for a map -->
+            <div class="map-placeholder">
+                <p>Map will be displayed here.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

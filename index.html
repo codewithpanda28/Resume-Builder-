@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Resume Builder - Create Professional Resumes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <img src="WhatsApp Image 2024-04-15 at 10.17.50_c8052e2f.jpg" alt="Logo" class="logo-img"> -->
+                <span>Resume Builder</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="login-btn" class="btn btn-secondary">Login</button>
+                <button id="signup-btn" class="btn btn-primary">Sign Up</button>
+                <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Create Stunning Resumes in Minutes</h1>
+                <p>Stand out from the crowd with our professional resume builder. Easy to use, ATS-friendly, and packed with features.</p>
+                <a href="templates.html"><button id="get-started-btn" class="btn btn-primary btn-large">Get Started</button></a>
+            </div>
+            <div class="hero-image">
+                <img src="https://static.resumetrick.com/resume-builder-landing.webp" alt="Resume Builder Demo">
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Powerful Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Multiple Templates</h3>
+                    <p>Choose from a wide range of professionally designed templates.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Easy Customization</h3>
+                    <p>Personalize your resume with our intuitive drag-and-drop editor.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI-Powered Suggestions</h3>
+                    <p>Get smart content suggestions to improve your resume.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-export"></i>
+                    <h3>Multiple Export Options</h3>
+                    <p>Download your resume in PDF, DOCX, or TXT formats.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-language"></i>
+                    <h3>Multi-Language Support</h3>
+                    <p>Create resumes in multiple languages with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Cloud Sync</h3>
+                    <p>Access your resumes from anywhere, anytime.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="templates" class="templates">
+            <h2>Professional Templates</h2>
+            <div class="template-slider">
+                <div class="template-card">
+                    <img src="data:image/jpeg;base64,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" alt="Modern Template">
+                    <h3>Modern</h3>
+                    <button class="btn btn-secondary">Use Template</button>
+                </div>
+                <div class="template-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDGuG-Wsvw1knnxSeIvicubd3WuuSj92ZzRQ&s" alt="Creative Template">
+                    <h3>Creative</h3>
+                    <button class="btn btn-secondary">Use Template</button>
+                </div>
+                <div class="template-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbiFa9D_fXeNvsDGx8VCUmSWgyYCJi-PN4YA&s" alt="Professional Template">
+                    <h3>Professional</h3>
+                    <button class="btn btn-secondary">Use Template</button>
+                </div>
+                <div class="template-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOE0qOkxnBNPsbzfEy4N1cPHKfK-JreYlMWA&s" alt="Executive Template">
+                    <h3>Executive</h3>
+                    <button class="btn btn-secondary">Use Template</button>
+                </div>
+            </div>
+            <button id="view-all-templates" class="btn btn-primary">View All Templates</button>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <h2>Choose Your Plan</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <p class="price">$0<span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 1 Resume</li>
+                        <li><i class="fas fa-check"></i> Basic Templates</li>
+                        <li><i class="fas fa-check"></i> PDF Download</li>
+                        <li><i class="fas fa-times"></i> AI Suggestions</li>
+                        <li><i class="fas fa-times"></i> Cloud Sync</li>
+                    </ul>
+                    <button class="btn btn-secondary">Choose Plan</button>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Pro</h3>
+                    <p class="price">$9.99<span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Unlimited Resumes</li>
+                        <li><i class="fas fa-check"></i> All Templates</li>
+                        <li><i class="fas fa-check"></i> PDF, DOCX, TXT Download</li>
+                        <li><i class="fas fa-check"></i> AI Suggestions</li>
+                        <li><i class="fas fa-check"></i> Cloud Sync</li>
+                    </ul>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p class="price">Custom</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Everything in Pro</li>
+                        <li><i class="fas fa-check"></i> Custom Branding</li>
+                        <li><i class="fas fa-check"></i> API Access</li>
+                        <li><i class="fas fa-check"></i> Dedicated Support</li>
+                        <li><i class="fas fa-check"></i> Team Management</li>
+                    </ul>
+                    <button class="btn btn-secondary">Contact Sales</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#templates">Templates</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Career Advice</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Resume Builder By Akash Kumar &middot;
+    </footer>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Name</label>
+                    <input type="text" id="signup-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+ <script src="templates.script.js"></script>
+ <script src="editor-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+.editor-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.editor-form {
+    flex: 1;
+}
+
+.resume-preview {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.dark-mode .resume-preview {
+    border-color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.experience-entry, .education-entry {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dark-mode .experience-entry, .dark-mode .education-entry {
+    border-color: #555;
+}
+
+#add-experience, #add-education {
+    margin-bottom: 1rem;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.download-options button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode .download-options button {
+    background-color: #0056b3;
+}
+
+/* Add this to your CSS file or within a <style> tag in your HTML */
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the buttons appear side by side */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+button:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    transform: scale(0.95); /* Slightly decrease size when clicked */
+}
+
+.resume-preview {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.preview-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.preview-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.preview-section {
+    margin-bottom: 15px;
+}
+
+.preview-section h4 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.preview-section p, .preview-section ul {
+    margin: 0;
+    color: #555;
+}
+
+.preview-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.preview-section ul li {
+    margin-bottom: 5px;
+}
+
+.customization-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Default button styles */
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white; /* White text */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #3e8e41;
+    transform: scale(0.95);
+}
+
+/* Dark mode styles */
+body.dark-mode button {
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+body.dark-mode button:hover {
+    background-color: #444; /* Slightly lighter dark background on hover */
+}
+
+body.dark-mode button:active {
+    background-color: #555; /* Even lighter dark background when clicked */
+}
+
+.card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card input, .card textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.customization-options label {
+    margin-right: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Change to your desired font family */
+    font-size: 16px; /* Change to your desired font size */
+}
+
+h2 {
+    font-family: 'Georgia', serif; /* Example for headings */
+    font-size: 24px;
+}
+
+input, textarea {
+    font-family: 'Verdana', sans-serif;
+    font-size: 14px;
+}
+
+.resume-preview {
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.customization-options select, .customization-options input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.preview-section h4 {
+    font-size: 18px; /* Set the desired font size */
+    font-family: 'Arial', sans-serif; /* Set the desired font family */
+    color: #333; /* Set the desired text color */
+}
+
+.preview-section p, .preview-section ul {
+    font-size: 16px; /* Set the desired font size */
+    font-family: 'Verdana', sans-serif; /* Set the desired font family */
+    color: #555; /* Set the desired text color */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .resume-preview {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .preview-card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .preview-card h3, 
+body.dark-mode .preview-card h4, 
+body.dark-mode .preview-card p {
+    color: #e0e0e0;
+}/* Base styles for mobile-first design */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.editor-container, .resume-preview {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.editor-form, .resume-preview {
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+    .editor-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .editor-form, .resume-preview {
+        width: 48%;
+    }
+}
+
+/* dark-mode.css */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .resume-preview,
+.dark-mode .preview-card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode p {
+    color: #e0e0e0;
+}

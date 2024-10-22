@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Editor | Your Resume Builder</title>
+    <meta name="description" content="Create and customize your professional resume with our advanced editor.">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="editor-style.css">
+    <link rel="stylesheet" href="templates.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header class="animate__animated animate__fadeInDown">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+    <main class="editor-container animate__animated animate__fadeInUp">
+     <div class="editor-container">
+    <div class="editor-form">
+        <div class="card">
+            <h2>Personal Information</h2>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="tel" id="phone" placeholder="Phone">
+            <textarea id="summary" placeholder="Professional Summary"></textarea>
+        </div>
+
+        <div class="card">
+            <h2>Work Experience</h2>
+            <div id="work-experience">
+                <div class="experience-entry">
+                    <input type="text" placeholder="Job Title">
+                    <input type="text" placeholder="Company">
+                    <input type="text" placeholder="Date Range">
+                    <textarea placeholder="Job Description"></textarea>
+                </div>
+            </div>
+            <button id="add-experience">Add Experience</button>
+        </div>
+
+        <div class="card">
+            <h2>Education</h2>
+            <div id="education">
+                <div class="education-entry">
+                    <input type="text" placeholder="Degree">
+                    <input type="text" placeholder="Institution">
+                    <input type="text" placeholder="Graduation Year">
+                </div>
+            </div>
+            <button id="add-education">Add Education</button>
+        </div>
+
+        <div class="card">
+            <h2>Skills</h2>
+            <textarea id="skills" placeholder="Enter your skills, separated by commas"></textarea>
+        </div>
+    </div>
+</div>
+      <div class="resume-preview animate__animated animate__fadeInUp">
+    <h2>Resume Preview</h2>
+    <div id="preview-content" class="preview-card">
+        <div class="preview-header">
+            <h3 id="preview-name">John Doe</h3>
+            <p id="preview-email">Email: john.doe@example.com</p>
+            <p id="preview-phone">Phone: (123) 456-7890</p>
+        </div>
+        <div class="preview-section">
+            <h4>Professional Summary</h4>
+            <p id="preview-summary">Experienced software developer with a passion for creating innovative solutions...</p>
+        </div>
+        <div class="preview-section">
+            <h4>Work Experience</h4>
+            <ul id="preview-experience">
+                <li><strong>Job Title</strong> at Company (Date Range)</li>
+                <li><strong>Job Title</strong> at Company (Date Range)</li>
+            </ul>
+        </div>
+        <div class="preview-section">
+            <h4>Education</h4>
+            <ul id="preview-education">
+                <li><strong>Degree</strong> from Institution (Graduation Year)</li>
+            </ul>
+        </div>
+        <div class="preview-section">
+            <h4>Skills</h4>
+            <p id="preview-skills">Skill1, Skill2, Skill3...</p>
+        </div>
+    </div>
+    <div class="customization-options">
+        <label for="font-style">Font Style:</label>
+        <select id="font-style">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+        <label for="font-size">Font Size:</label>
+        <input type="number" id="font-size" value="16" min="10" max="30">
+    </div>
+</div>
+    </main>
+    <div class="download-options animate__animated animate__fadeInUp">
+        <button id="download-pdf" class="animate__animated animate__pulse">Download PDF</button>
+        <button id="download-docx" class="animate__animated animate__pulse">Download DOCX</button>
+        <button id="download-txt" class="animate__animated animate__pulse">Download TXT</button>
+    </div>
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 Your Resume Builder. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="templates.script.js"></script>
+    <script src="editor-script.js"></script>
+    <script>
+        // GSAP animations for additional interactivity
+        gsap.from(".editor-form input, .editor-form textarea", { duration: 1, y: 30, opacity: 0, stagger: 0.2 });
+        gsap.from(".resume-preview", { duration: 1, scale: 0.9, opacity: 0, delay: 0.5 });
+    </script>
+</body>
+</html>
